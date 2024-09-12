@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Steppe-book';
+  src: url(/fonts/Steppe-Book.ttf) format('ttf'),
+    url(/fonts/Steppe-Book.woff) format('woff'),
+    url(/fonts/Steppe-Book.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+
+@font-face {
+  font-family: 'Steppe-ExtraBold';
+  src: url(/fonts/Steppe-ExtraBold.ttf) format('ttf'),
+    url(/fonts/Steppe-ExtraBold.woff) format('woff'),
+    url(/fonts/Steppe-ExtraBold.woff2) format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}

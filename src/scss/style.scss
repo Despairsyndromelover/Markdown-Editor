@@ -1,2 +1,111 @@
-@import 'normalize.css';
+@import 'normalize.scss';
 @import 'variables.scss';
+@import 'fonts.scss';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $primary-color;
+
+  color: $secondary-color;
+  font-family: $normal-font;
+  font-size: 24px;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+// ------------------
+.header {
+  .header__inner {
+    background-color: $accent-color;
+    padding: 10px 5px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 5px;
+
+    .nav-list__btn {
+      border: none;
+      background-color: $accent-color;
+      color: $secondary-color;
+      font-family: $normal-font;
+      font-size: 16px;
+      text-align: center;
+      padding: 5px 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .nav-list__btn:hover {
+      background-color: $hover-color;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  justify-content: center;
+}
+.editing {
+
+  &__inner {
+  overflow: hidden;
+
+    height: 95vh;
+    width: 50vw;
+
+    background-color: $primary-color;
+  }
+
+  .editing__input {
+    border: none;
+    color: $secondary-color;
+    background-color: $primary-color;
+    height: 1000vh;
+    width: 50vw;
+    font-size: 16px;
+    font-family: $bold-font;
+    border-right: 1px solid $secondary-color;
+    padding: 10px 0px 0px 10px;
+    resize: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+  }
+
+  .editing__input::-webkit-scrollbar {
+    display: none;
+  }
+
+  .editing__input:focus-visible {
+    outline: 0;
+  }
+}
+
+.preview {
+  overflow: hidden;
+  &__inner {
+    height: 95vh;
+    width: 50vw;
+    background-color: $primary-color;
+    font-size: 16px;
+    font-family: $bold-font;
+    border-left: 1px solid $secondary-color;
+  }
+
+  &__text {
+    padding: 10px 0px 0px 10px;
+  }
+}
