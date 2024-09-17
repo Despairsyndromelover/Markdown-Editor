@@ -1,3 +1,5 @@
+@import './fonts.scss';
+@import './variables.scss';
 .heading1 {
   font-size: 42px;
   margin-top: 5px;
@@ -13,13 +15,23 @@
 }
 
 .heading4 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
-.heading5{
-    font-size: 28px;
+.heading5 {
+  font-size: 28px;
 }
 
-.heading6{
-    font-size: 26px;
+.heading6 {
+  font-size: 26px;
+}
+
+.img-el {
+  max-width: 500px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+strong {
+  font-family: $bold-font;
 }
